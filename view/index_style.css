@@ -1,0 +1,91 @@
+body {
+    background-color: #7091e6;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*This makes the header, form and the footer to be arranged in the column way */ 
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+}
+
+header{
+    margin-bottom: 45px;
+}
+header h1{
+    font-size:3.5em;
+    align-items: center;
+    color:#ffffff;
+}
+header h2{ /* */
+    font-family: cursive;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Style the form container */
+form {
+    justify-content: center;
+    background-color: #8697c4;
+    padding: 50px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Style the form elements */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+    border: 1px solid #adbbda;
+    border-radius: 10px;
+    font-size:16px;
+}
+
+button[type="submit"] {
+    background-color: #adbbda;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #7091e6;
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    font-family:cursive;
+    background-color: #4571d1;
+    padding: 10px;
+}
+
+footer p{
+    margin : 5px 0;
+    font-size: 1em;
+}

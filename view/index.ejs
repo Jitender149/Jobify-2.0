@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Form</title>
+    <link rel="stylesheet" href="index_style.css">
+</head>
+<body>
+    <header>
+        <h1>Jobify
+            <h2>Simplifying Your Job Search Journey with Curated Listings!</h2></h1>
+    </header>
+    <main>
+    <form action="/submit" method="post">
+        <label for="keywords">Keywords:</label>
+        <input type="text" id="keywords" name="keywords" required>
+        <br>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        <br>
+        <button type="submit">Search</button>
+    </form>
+    </main>
+    <footer>
+        <p>Enter the relevant keywords for the job you are looking for(e.g., 'Engineer', 'Doctor').</p>
+        <p>Specify the location where you want to find the job(e.g. 'New Delhi', 'New York').</p>
+    </footer>
+</body>
+</html>

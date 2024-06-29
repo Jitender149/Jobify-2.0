@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Results</title>
+    <link rel="stylesheet" href="solution_style.css">
+</head>
+<body>
+    <h1>Job Search Results</h1>
+    <% if (jobs && jobs.jobs && jobs.jobs.length > 0) { %>
+        <ul>
+            <% jobs.jobs.forEach(job => { %>
+                <li>
+                    <h2><%= job.title %></h2>
+                    <h2><%= job.company%></h2>
+                    <!--The <%%- %%> tags allow unescaped HTML content to be rendered, which means any HTML tags within the job snippet will be interpreted correctly by the browser-->
+                    <p><%- job.snippet %></p>
+                    <p><strong>Location:</strong> <%= job.location %></p>
+                    <a href="<%= job.link %>">Apply Here</a>
+                </li>
+            <% }) %>
+        </ul>
+    <% } else { %>
+        <p>No jobs found.</p>
+    <% } %>
+</body>
+</html>
