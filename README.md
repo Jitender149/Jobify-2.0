@@ -1,6 +1,6 @@
 Welcome to the our project.
 
-# Jobify : Simpligying Your Job Search Journey with Curated Listings!
+# Jobify : Simplifying Your Job Search Journey with Curated Listings!
 
 ## Description
 
