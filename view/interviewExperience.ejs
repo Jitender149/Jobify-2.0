@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview Experiences</title>
+    <link rel="stylesheet" href="/view/interviewExperience.css">
+</head>
+<body>
+    <h1>Interview Experiences</h1>
+
+    <!-- Form to submit interview experiences -->
+    <form action="/addExperience" method="post">
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required>
+        
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" required>
+        
+        <label for="experience">Experience:</label>
+        <textarea id="experience" name="experience" rows="5" required></textarea>
+        
+        <button type="submit">Submit Experience</button>
+    </form>
+
+    <!-- Display previously added experiences -->
+    <h2>Previous Experiences</h2>
+    <% if (experiences.length > 0) { %>
+        <ul>
+            <% experiences.forEach(exp => { %>
+                <li>
+                    <strong>Company:</strong> <%= exp.company %><br>
+                    <strong>Position:</strong> <%= exp.position %><br>
+                    <strong>Experience:</strong> <%= exp.experience %>
+                </li>
+            <% }) %>
+        </ul>
+    <% } else { %>
+        <p>No experiences added yet.</p>
+    <% } %>
+</body>
+</html>
